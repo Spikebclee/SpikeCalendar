@@ -1,0 +1,27 @@
+button{
+	width:40px;
+	height: 30px;
+	background-color: #004fff;
+	border:none;
+	color:white;
+	box-shadow: 0 4px 16px rgba(0, 79, 255, 0.3);
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 20px;
+	position: absolute;
+	top:5%;
+	/*left:15%;*/
+    right:70%;
+	transform: translate(-50%, -50%);
+	transition:0.3s;
+}
+/* 포커스 됐을 때 */
+button:focus{
+	outline: 0;
+}
+/* 마우스 오버 했을 때 */
+button:hover{
+	background-color:rgba(0, 79, 255, 0.9) ;
+	cursor: pointer;
+	box-shadow: 0 2px 4px rgba(0, 79, 255, 0.6);
+}
