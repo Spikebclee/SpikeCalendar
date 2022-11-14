@@ -1,13 +1,4 @@
-이슈 개요
-프로젝트의 설명 및 구조를 알기 쉽게 README.md 파일을 추가
-요구 사항
-README.md 파일 추가하고 다음 내용을 추가Cancel changes
-프로젝트 소개
-프로젝트 구성
-실행 가이드 (혹은 워크플로우)
-기타 설명
-
-Spike Full Calendar Project
+* Spike Full Calendar Project
 
 프로젝트 소개
 구글 캘린더 동일 수준의 달력을 완성 하자.
