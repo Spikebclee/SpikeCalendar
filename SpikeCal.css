@@ -1,0 +1,120 @@
+<!-- Improt Google font - Concert One -->
+
+@Improt url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Concert One';
+}
+
+/* 웹창 전체 창 조절 */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #9B59B6;
+}
+
+/* 달력 Top 폭 조절 */
+.wrapper{
+    width: 450px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* 달력 Top 높이 조절 */
+.wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 20px 70px 10px;
+    justify-content: space-between;
+}
+
+/* 달력 Top 제목 Font Size 조절 */
+header .current-date{
+    font-size: 1.7rem;
+    font-weight: 500;
+} 
+
+/* 마우스 커서 백그라운드 컬러 사이즈 크기 조정 */
+header .icons span{
+    height: 38px;
+    width: 38px;
+    color: #878788;
+    font-size: 1.9rem;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+
+header .icons span:hover{
+    background: #f2f2f2;
+}
+
+/* 이전 다음 아이콘 위치 조정 */
+header .icons span:last-child{
+    margin-right: -50px;
+}
+.calendar{
+    padding: 10px;
+}
+
+.calendar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.calendar .days{
+    margin-bottom: 20px;
+}
+
+/* weeks 폰트 굵기 */
+.calendar .weeks li{
+    font-weight: 550;
+}
+
+/* weeks 7일 */
+.calendar ul li{
+    position: relative;
+    width: calc(100% / 7);
+}
+
+.calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.days li.inactive{
+    color: #aaa;
+}
+
+.days li.active{
+    color: #fff;
+}
+
+.calendar .days li::before{
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li:hover::before{
+    background: #f2f2f2;
+}
+
+.days li.active::before{
+    background: #9B59B6;
+}
